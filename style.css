@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-
+:root {
+    color-scheme: only light;
+}
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* Degradado radial: más claro en el centro, rosa más oscuro a los bordes */
-    background: radial-gradient(circle, #ffeaf2 0%, #f7b2cf 100%);
+    /* Añadimos !important para que el navegador no lo sobreescriba */
+    background: radial-gradient(circle, #ffeaf2 0%, #f7b2cf 100%) !important;
+    background-attachment: fixed;
     font-family: "Titan One", sans-serif;
+    /* Evita que Brave intente invertir colores en el renderizado */
+    filter: none !important;
 }
 
 #canvas {
@@ -122,4 +127,17 @@ h1 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 25px;
+}
+
+h1, p, .btn-no {
+    color: #ff4d8d !important;
+}
+
+.btn-yes {
+    background-color: #ff4d8d !important;
+    color: white !important;
+}
+
+img {
+    filter: none !important;
 }
