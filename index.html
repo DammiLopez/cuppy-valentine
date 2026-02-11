@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div class="main-container">
+        <img src="./assets/36a09ebf177a55efc0af34e8d5cd0000.gif" alt="Love" class="gif-main">
+
+        <h1>Will you be my Cuppy valentine?</h1>
+
+        <div class="buttons-container">
+            <button class="btn btn-yes" id="yesBtn">Yes</button>
+            <div id="noBtnSlot" class="slot"></div>
+            <button class="btn btn-no" id="noBtn">No</button>
+        </div>
+
+        <img src="./assets/cute-dancing.gif" alt="Love" class="gif-main">
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <img src="./assets/ty.gif" alt="Celebration" class="modal-img">
+            <p>I knew you would say YES! 😊❤️</p>
+            <button class="btn btn-yes" onclick="closeModal()">Wanna try again?</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
